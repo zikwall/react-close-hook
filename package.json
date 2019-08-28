@@ -2,8 +2,10 @@
   "name": "react-close-hook",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "npx babel index.js --out-dir dist",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +25,25 @@
   "bugs": {
     "url": "https://github.com/zikwall/react-close-hook/issues"
   },
-  "homepage": "https://github.com/zikwall/react-close-hook#readme"
+  "homepage": "https://github.com/zikwall/react-close-hook#readme",
+  "eslintConfig": {
+    "extends": "eslint-config-i-am-meticulous/react"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.5.5",
+    "@babel/core": "7.5.5",
+    "@babel/plugin-proposal-class-properties": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/preset-react": "7.0.0",
+    "@storybook/react": "5.1.11",
+    "@storybook/storybook-deployer": "2.8.1",
+    "babel-eslint": "10.0.2",
+    "babel-loader": "8.0.6",
+    "eslint": "6.1.0",
+    "eslint-config-i-am-meticulous": "11.0.0",
+    "eslint-plugin-react": "7.14.3",
+    "prop-types": "15.7.2",
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  }
 }
