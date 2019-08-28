@@ -1,0 +1,27 @@
+{
+  "name": "react-close-hook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zikwall/react-close-hook.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "close",
+    "wrapper",
+    "outside",
+    "escape"
+  ],
+  "author": "Andrey Kapitonov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zikwall/react-close-hook/issues"
+  },
+  "homepage": "https://github.com/zikwall/react-close-hook#readme"
+}
