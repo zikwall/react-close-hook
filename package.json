@@ -4,8 +4,9 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npx babel index.js --out-dir dist",
-    "prepublish": "npm run build",
+    "build": "webpack",
+    "dev": "webpack --watch",
+    "prepare": "npm run build && npm version patch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,21 +30,22 @@
   "eslintConfig": {
     "extends": "eslint-config-i-am-meticulous/react"
   },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
   "devDependencies": {
-    "@babel/cli": "7.5.5",
-    "@babel/core": "7.5.5",
-    "@babel/plugin-proposal-class-properties": "7.5.5",
-    "@babel/preset-env": "7.5.5",
-    "@babel/preset-react": "7.0.0",
-    "@storybook/react": "5.1.11",
-    "@storybook/storybook-deployer": "2.8.1",
-    "babel-eslint": "10.0.2",
-    "babel-loader": "8.0.6",
     "eslint": "6.1.0",
     "eslint-config-i-am-meticulous": "11.0.0",
     "eslint-plugin-react": "7.14.3",
-    "prop-types": "15.7.2",
-    "react": "16.9.0",
-    "react-dom": "16.9.0"
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
   }
 }
