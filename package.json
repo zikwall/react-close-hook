@@ -1,7 +1,7 @@
 {
   "name": "react-close-hook",
   "version": "1.0.2",
-  "description": "",
+  "description": "Hooks and wrappers to close by pressing ESC and clicking outside the component",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack",
